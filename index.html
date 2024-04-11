@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <form id="login" onsubmit="return information();">
+
+        <!--for input of information-->
+        <fieldset form="login" id="input">
+        <legend>Log-in Credentials: </legend><br>
+
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" onblur="nameBlur()" onfocus="nameFocus()" autocomplete="on"><br><br>
+
+        <label for="userName">Username:</label>
+        <input type="text" id="userName" name="userName" onblur="userNameBlur()" onfocus="userNameFocus()" autocomplete="on"><br><br>
+
+        <label for="pword">Password:</label>
+        <input type="password" id="pword" name="pword" onblur="pwordBlur()" onfocus="pwordFocus()"><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" onblur="emailBlur()" onfocus="emailFocus()" autocomplete="on"><br><br>
+
+        <label for="address">Address:</label>
+        <input type="text" id="address" name="address" onblur="addressBlur()" onfocus="addressFocus()" autocomplete="on"><br><br>
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" min="1" max="100" onblur="ageBlur()" onfocus="ageFocus()"><br><br>
+
+        <label for="bday">Birthdate:</label>
+        <input type="date" id="bday" name="bday" onblur="bdayBlur()" onfocus="bdayFocus()"><br><br>
+
+        <label for="gen">Gender:</label></r>
+        <select name="gender" id="gen" onblur="genderBlur()" onfocus="genderFocus()">
+            <option value="Select">Select</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Prefer Not To Mention">Prefer Not To Mention</option>
+        </select><br><br>
+        
+        <label for="interests">Interests:</label><br>
+        <textarea id="interests" name="interests" rows="4" cols="50" onblur="interestsBlur()" onfocus="interestsFocus()"></textarea>
+        </textarea><br><br>
+        
+        <input type="submit" value="Submit" id="submit">
+        <input type="reset" value="Reset" id="reset" onclick="again();"><br><br>
+        </fieldset>
+
+        <!--for display of input-->
+        <fieldset id="output">
+        <legend>Details: </legend>
+            <div class="info">
+                <p id="display"></p>
+            </div>
+
+        </fieldset>
+    </form>
+
+    <link rel="stylesheet" type="text/css" href="style.css"> <!--external css file-->
+
+    <script type="text/javascript" src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,29 @@
+body{
+    padding: 0;
+    margin: 5vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: large;
+    background-color: white;
+}
+
+#input{
+    background-color:blanchedalmond;
+    text-align: left;
+}
+
+#output{
+    margin-top: 5vh;
+    background-color: blanchedalmond;
+    text-align: left;
+}
+
+
+#submit{
+    font-size: large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#reset{
+    font-size: large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
